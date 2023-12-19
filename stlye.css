@@ -1,0 +1,412 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+/* Hero Section */
+.jumbotron-custom {
+  background-color: #3e82c5; 
+  padding: 60px 0; 
+  text-align: center; 
+}
+
+.image-container {
+  text-align: center; 
+}
+
+.profile-image {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 3px solid #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.hero-title {
+  font-size: 2.5rem; 
+  color: #333; 
+  margin-top: 20px; 
+  font-weight: bold; 
+}
+
+.hero-description {
+  font-size: 1.2rem; 
+  color: #000000; 
+  margin-top: 10px; 
+}
+
+.social-icon {
+  font-size: 2rem; 
+  color: #333; 
+  margin-top: 20px; 
+  text-decoration: none; 
+}
+
+.social-icon:hover {
+  color: #0056b3; 
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .jumbotron-custom {
+    padding: 40px 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff; 
+}
+
+nav a {
+    color: white !important;
+}
+
+nav a:hover {
+    color: #ffdd00; 
+    text-decoration: underline;
+}
+
+/* Hover Effect for Buttons */
+.btn-secondary:hover {
+    background-color: #0056b3; 
+}
+
+/* Hover Effect for Project Cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card, .carousel-item {
+    animation: fadeIn 1s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Skills Section */
+#skills {
+  background-color: #ffffff;
+  padding: 150px 0;
+}
+
+.card-deck {
+  margin: 5px;
+}
+
+.card {
+  width: 33.33%;
+  margin: 0 15px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+#projects {
+  background-color: #fff;
+  padding: 150px 0;
+}
+
+#projectCarousel {
+  position: center;
+  margin: 0 auto;
+  width: 100%;
+  height: max-content;
+}
+
+
+#projectCarousel .carousel-item img {
+  width: auto;
+  height: auto;
+
+}
+
+#projectCarousel .carousel-item .card-body {
+  position: centre;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0px 0 20px;
+}
+
+#projectCarousel .carousel-item .card-title {
+  color: rgb(14, 13, 13);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#projectCarousel .carousel-item .card-text {
+  color: rgb(14, 13, 13);
+  font-size: 16px;
+}
+
+#projectCarousel .carousel-control-prev,
+#projectCarousel .carousel-control-next {
+  background-color: #2196F3;
+
+  padding: 5px 5px; 
+  color: #2196F3;
+  font-size: 14px; 
+  font-weight: 600;
+}
+
+#projectCarousel .carousel-control-prev:hover,
+#projectCarousel .carousel-control-next:hover {
+  background-color: #92abbe;
+  color: white;
+}
+
+#projectCarousel .carousel-inner {
+    display: flex;
+    align-items: center; 
+    min-height: 300px;
+}
+
+#projectCarousel .card {
+
+    margin: 0 auto; 
+}
+
+.project-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+/* Styling the card body */
+.project-card .card-body {
+    padding: 20px;
+}
+
+/* Card Title */
+.project-card .card-title {
+    font-size: 1.5rem; 
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+/* Card Text */
+.project-card .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Technology Tags */
+.project-card .tech-tags span {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+
+/* Links Container */
+.project-card .links-container {
+    margin-top: 15px;
+}
+
+/* Individual Project Links */
+.project-card .project-link {
+    text-decoration: none;
+    color: #007bff; 
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.project-card .project-link i {
+    margin-left: 5px;
+}
+
+/* Image Styling */
+.project-card img.card-img {
+    width: 5%;
+    height: 5%; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .project-card .row {
+        flex-direction: column-reverse; 
+    }
+
+    .project-card .card-body {
+        padding: 15px;
+    }
+}
+
+
+/* Education Section */
+.education-section {
+    margin-top:150px;
+}
+
+.education-section .card-body {
+        flex: 0 0 45%;
+        margin: 1px; }
+
+
+.card-body {
+    background-color: #fff;
+    border-radius: 1px;
+ 
+    margin: 10px;
+    padding: 20px;
+    height: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .row > [class*='col-'] {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start; 
+    }
+    
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+}
+
+/* Additional styling for the titles and list items */
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Styling for the button group */
+.btn-group .btn {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+/* work experince section*/
+
+#work-experience {
+    padding: 150px 0;
+}
+
+
+
+#work-experience .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+}
+
+#work-experience .row {
+ 
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+
+/* Additional CSS for centering and responsiveness */
+@media (min-width: 768px) {
+    #work-experience .card {
+        max-width: 200%; 
+        margin: auto; 
+    }
+}
+
+
+.work-card .card-body {
+    padding: 10px;
+}
+
+.company-title {
+    font-weight: bold;
+}
+
+.job-title {
+    font-style: italic;
+}
+
+.employment-dates {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.job-description {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+/* About Me Section */
+.about-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .skills-section,
+    .project-section,
+    .education-section,
+    .about-section {
+        padding: 60px 0;
+    }
+}    
